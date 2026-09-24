@@ -27,3 +27,7 @@ public class MainActivity extends AppCompatActivity {
 //nowy plik db.json w repozytorium (nowym)
 //https://my-json-server.typicode.com/wikadii/nazwa_repo
 //aplikacja w android studio
+//dodac dependencies     implementation("com.squareup.retrofit2:retrofit:2.9.0")
+//    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+//dodac do manifestu nad <application>    <uses-permission android:name="android.permission.INTERNET"/>
+
