@@ -1,6 +1,10 @@
 package com.example.aplikacja;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +12,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
+    RadioGroup radioGroupQuestions;
+    RadioButton radioButtonA, radioButtonB, radioButtonC;
+    Button buttonNext;
+    TextView textViewQuestionContent;
+    ArrayList<Question> questionList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +31,16 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        radioGroupQuestions = findViewById(R.id.radioGroup);
+
+        radioButtonA = findViewById(R.id.radioButton);
+        radioButtonB = findViewById(R.id.radioButton2);
+        radioButtonC = findViewById(R.id.radioButton3);
+
+        buttonNext = findViewById(R.id.button);
+
+        textViewQuestionContent = findViewById(R.id.textViewQuestion);
+
     }
 }
 //json validator
