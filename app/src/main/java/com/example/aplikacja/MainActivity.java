@@ -22,3 +22,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+//json validator
+//public repozytorium
+//nowy plik db.json w repozytorium (nowym)
+//https://my-json-server.typicode.com/wikadii/nazwa_repo
+//aplikacja w android studio
